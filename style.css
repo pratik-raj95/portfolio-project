@@ -1,0 +1,777 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+
+}
+#page1{
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid #000;
+
+}
+
+body::-webkit-scrollbar{
+    background-color: transparent;
+
+}
+body::-webkit-scrollbar-thumb{
+    background : linear-gradient(red,blue,green);
+    border-radius: 20px;
+}
+
+
+
+
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: red;
+    padding: 10px 0;
+    width: auto;
+}
+
+
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    header {
+        padding: 5px 0; /* Adjust padding as needed */
+    }
+}
+
+
+nav {
+    background-color: #ff0000;
+    color: white;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+    padding: 20px 0; 
+    top: 0;
+    z-index: 100;
+}
+
+
+
+/*nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+   
+
+}*/
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+h2 {
+    color: red;
+}
+
+section p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* Home section styles */
+.Home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background-color: black;
+    color: white;
+}
+
+/* Home content styles */
+.home-content {
+    width: 50%;
+}
+
+.home-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.change-text h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.word {
+    padding-top:12px ;
+    font-size: 24px;
+    color: white;
+}
+
+.change-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    
+}
+
+.change-text .word {
+    display: inline-block;
+    animation: changeText 3s linear infinite;
+}
+
+@keyframes changeText {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    20%, 80% {
+        transform: translateY(-20px);
+    }
+}
+
+
+
+.home-content p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.info-box {
+    margin-top: 20px;
+}
+
+.email-info, .phone-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.email-info h5, .phone-info h5 {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.email-info a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Button styles */
+.btn-box {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff0000;
+}
+
+/* Social icons styles */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Home image styles */
+.home-image {
+    width: 50%;
+    text-align: center;
+}
+
+.img-box img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid red;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+
+
+@media (max-width: 768px) {
+    .Home {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .home-content, .home-image {
+        width: 100%;
+    }
+
+    .home-content h1 {
+        font-size: 24px;
+        margin-top: 50px; /* Add margin to separate h1 from other content */
+    }
+
+    .change-text h3 {
+        font-size: 16px;
+        
+    }
+
+    .word {
+        font-size: 24px;
+        color: white;
+    }
+
+    .home-content p {
+        font-size: 16px;
+        margin-top: 10px; /* Add margin to separate p from other content */
+    }
+
+    .info-box {
+        margin-top: 10px;
+    }
+
+    .email-info, .phone-info {
+        margin-bottom: 10px;
+    }
+
+    .email-info h5, .phone-info h5 {
+        font-size: 18px;
+    }
+
+    .email-info a {
+        font-size: 14px;
+    }
+
+    .btn-box {
+        margin-top: 20px;
+    }
+
+    .btn {
+        padding: 10px 15px;
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    .social-icons {
+        margin-top: 20px;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+}
+
+
+
+.about {
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-about {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.img-about img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid red;
+    border-radius: 50%;
+    
+}
+
+.info-about {
+    margin-top: 20px;
+}
+
+.info-about div {
+    margin-bottom: 20px;
+}
+
+.info-about span {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.info-about p {
+    font-size: 14px;
+}
+
+.about-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-content span {
+    color: red;
+    font-weight: bold;
+}
+
+.about-content h2 {
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+.about-content h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.about-content p {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.btn-box {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+    color: red;
+}
+
+
+/* Style for <hr> tags */
+hr {
+    border: none;
+    height: 2px; /* Adjust the thickness as needed */
+    background-color: red; /* Match the color to your design */
+    margin: 20px 0; /* Adjust the margin to control spacing */
+}
+
+/* Optional: Add a gradient effect to the <hr> */
+hr::before {
+    content: '';
+    display: block;
+    height: 2px; /* Same as the <hr> height */
+    background: linear-gradient(90deg, transparent, red, transparent); /* Adjust gradient colors as needed */
+}
+
+                                  /*service*/
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+h1, h2 {
+    color: red;
+}
+
+p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 24px;
+}
+
+
+
+/*skill section */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.skills {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.main-text span {
+    color: red;
+    font-size: 18px;
+}
+
+.main-text h2 {
+    color: white;
+    font-size: 36px;
+    margin-top: 10px;
+}
+
+.skill-left {
+    margin-top: 30px;
+}
+
+h3 {
+    color: red;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.skill-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.info p {
+    margin: 0;
+}
+
+.info p:first-child {
+    font-weight: bold;
+}
+
+.bar {
+    width: 70%; /* Adjust the width as needed */
+    height: 20px;
+    background-color: red;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bar span {
+    display: block;
+    height: 100%;
+    width: 0;
+    background-color: white;
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+}
+
+.bar .html {
+    width: 72%;
+}
+
+.bar .mysql {
+    width: 82%;
+}
+
+.bar .javascript {
+    width: 70%;
+}
+
+.bar .react {
+    width: 65%;
+}
+.bar .css {
+    width: 95%;
+}
+
+.bar .C_language {
+    width: 90%;
+}
+
+/*project section */
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.project {
+    padding: 50px 0;
+    text-align: center;
+    
+   
+}
+.main-text h2 {
+    color: white;
+    font-size: 36px;
+    margin-top: 10px;
+}
+.project h2{
+    color: red;
+}
+
+h2 {
+    color: red;
+    font-size:24px;
+}
+
+p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 50px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    img {
+        max-width: 80%; /* Adjust as needed for smaller screens */
+    }
+}
+
+/*contact*/
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+h2 {
+    color: red;
+    font-size: 24px;
+}
+
+p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid red;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/*Footer section */
+
+footer {
+    background-color: red;
+    text-align: center;
+    padding: 10px 0;
+}
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+  
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: red;
+}
+
+span {
+    color: white;
+}
+
+p {
+    font-size: 14px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+/* Styling for specific social media icons, e.g., fab fa-facebook, fab fa-instagram, etc. */
+.fab.fa-facebook {
+    color: #1877f2; /* Facebook color */
+}
+
+.fab.fa-instagram {
+    color: #bc2a8d; /* Instagram color */
+}
+
+.fab.fa-youtube {
+    color: #ff0000; /* YouTube color */
+}
+
+.fab.fa-twitter {
+    color: #1da1f2; /* Twitter color */
+}
+
+/* Add more social media icon styles as needed */
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: red;
+}
+
+span {
+    color: white;
+}
+
+p {
+    font-size: 14px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+/* Styling for specific social media icons, e.g., fab fa-facebook, fab fa-instagram, etc. */
+.fab.fa-facebook {
+    color: #1877f2; /* Facebook color */
+}
+
+.fab.fa-instagram {
+    color: #bc2a8d; /* Instagram color */
+}
+
+.fab.fa-youtube {
+    color: #ff0000; /* YouTube color */
+}
+
+.fab.fa-twitter {
+    color: #1da1f2; /* Twitter color */
+}
+
+.fab.fa-linkedin {
+    color: #0077B5; /* LinkedIn color */
+}
+/* Add more social media icon styles as needed */
